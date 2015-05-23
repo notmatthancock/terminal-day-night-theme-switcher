@@ -17,9 +17,9 @@ and move it to wherever you would like its final location to be, called `path/to
 
 You must have themes named "Day" and "Night" defined in Terminal. Go to Terminal > Preferences and define them. I prefer to work in a light theme in the day and dark at night.
 
-Edit the file `path/to/switcher/src/main.sh`. Set the variable `term_theme_switch=path/to/switcher/src` in line 1.
+Edit the file `path/to/switcher/src/main.sh`. Set the variable `term_theme_switch=path/to/switcher/src` in line 1. This corresponds to where you moved the repository above.
 
-Finally edit `path/to/switcher/src/main.sh` in line 2. Change \*my location\* to your location. For example, "miami, fl".
+Finally edit `path/to/switcher/src/main.sh` in line 2. Change *my location* to your location. For example, "miami, fl".
 
 
 ### Overview
