@@ -1,10 +1,26 @@
-# Day / Night Theme Switcher for MAC OS X Terminal
+# OS X Terminal Day-Night Theme Switcher
 
 Change the theme of your terminal based on whether it is day or night at your current location!
 
 ![A Night Theme and Day Theme](https://raw.githubusercontent.com/chestervonwinchester/terminal-day-night-theme-switcher/master/screenshot.png)
 
-## Dependencies, setup, etc...
+## Setup
+
+First grab the repository
+
+    git clone https://github.com/chestervonwinchester/terminal-day-night-theme-switcher.git
+
+and move it to wherever you would like its final location to be. You must have a working version of python, with `requests` and `pyquery` libraries installed. If not, install them:
+
+    pip install requests
+    pip install pyquery
+
+You must have themes named "Day" and "Night" defined in Terminal. Go to Terminal > Preferences and define them. I prefer to work in a light theme in the day and dark at night.
+
+Edit the file `path/to/switcher/src/main.sh`. Set the variable `term_theme_switch=path/to/switcher/src` in line 1. This corresponds to where you moved the repository above.
+
+Finally edit `path/to/switcher/src/main.sh` in line 2. Change *my location* to your location. For example, "miami, fl".
+
 
 ### Overview
 
