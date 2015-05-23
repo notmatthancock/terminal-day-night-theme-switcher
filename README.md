@@ -2,7 +2,7 @@
 
 Change the theme of your terminal based on whether it is day or night at your current location!
 
-![A Night Theme and Day Theme](https://github.com/chestervonwinchester/terminal-day-night-theme-switcher/screenshot.png)
+![A Night Theme and Day Theme](https://raw.githubusercontent.com/chestervonwinchester/terminal-day-night-theme-switcher/master/screenshot.png)
 
 ## Dependencies, setup, etc...
 
