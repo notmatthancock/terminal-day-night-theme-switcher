@@ -19,7 +19,9 @@ You must have themes named "Day" and "Night" defined in Terminal. Go to Terminal
 
 Edit the file `path/to/switcher/src/main.sh`. Set the variable `term_theme_switch=path/to/switcher/src` in line 1.
 
-Finally edit `path/to/switcher/src/main.sh` in line 2. Change \*my location\* to your location. For example, "miami, fl".
+Finally edit `path/to/switcher/src/main.sh` in line 2. Change \*my location\* to your location (caps dont really matter). For example, this line might read:
+
+    theme=$(python get_theme.py miami, fl)
 
 
 ### Overview
