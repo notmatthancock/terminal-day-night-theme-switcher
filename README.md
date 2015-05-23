@@ -19,23 +19,16 @@ You must have themes named "Day" and "Night" defined in Terminal. Go to Terminal
 
 Edit the file `path/to/switcher/src/main.sh`. Set the variable `term_theme_switch=path/to/switcher/src` in line 1.
 
-Finally edit `path/to/switcher/src/main.sh` in line 2. Change \*my location\* to your location (caps dont really matter). For example, this line might read:
+Edit `path/to/switcher/src/main.sh` in line 2. Change \*my location\* to your location (caps dont really matter). For example, this line might read:
 
     theme=$(python get_theme.py miami, fl)
 
+Finally, you should add `path/to/switcher/src/main.sh` to your crontab.
 
-### Overview
+    crontab -e
 
-A bash script calls a python script that determines whether it is day or night. The python script yields, "Day" or "Night", which is used as an argument to applescript that changes the theme of all open terminal tabs and windows accordingly.
+Then add:
 
-You must have themes in Terminal named "Day" and "Night" for this to work.
+    0 * * * * path/to/switcher/src/main.sh
 
-### Getting the Theme
-The python script executes, `./src/get_theme.py my location`, which queries google to determine the time of sunrise and sunset. It searches google based on the value of "my location". This must be changed in `src/main.sh` toyour location. The script opens the url with the `requests` library and parses the result with `pyquery`. Therefore, run
-
-    pip install requests
-    pip install pyquery
-
-if you do not have these already installed.
-
-This is a couple of scripts that query google for the times of sunrise and sunset in your area, and then use this information to set the theme of all open terminal windows to "Day" or "Night" depending on the local time. Of course, "Day" and "Night" themes must exist in your Terminal app.
+This will run every hour, and set your theme accordingly!
