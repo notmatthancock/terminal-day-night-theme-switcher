@@ -1,8 +1,10 @@
 # OS X Terminal Day-Night Theme Switcher
 
-Automatically change the theme of your terminal based on whether it is day or night at your current location! This was developed under 10.6 (I know - my laptop is old). It should work under new versions but has not been tested.
+Automatically change the theme of your terminal based on whether it is day or night at your current location!
 
 ![A Night Theme and Day Theme](https://raw.githubusercontent.com/chestervonwinchester/terminal-day-night-theme-switcher/master/screenshot.png)
+
+This was developed under 10.6 (I know - my laptop is old). It should work under new versions but has not been tested.
 
 ## Setup
 
