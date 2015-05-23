@@ -1,5 +1,3 @@
-#!/usr/local/bin/python
-
 import requests, time, sys
 from pyquery import PyQuery as pq
 
